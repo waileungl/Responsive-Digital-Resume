@@ -1,107 +1,316 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--========== BOX ICONS ==========-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-        <title>Responsive resume cv</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Will</a>
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-home'></i>Home
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <main class="l-main bd-container">
-            <!-- All elements within this div, is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        
-                        <!-- Theme change button -->
-                        
-    
-                        <!-- Button to generate and download the pdf. Available for desktop. -->
+    <title>Responsive resume cv</title>
+</head>
 
-                    </section>          
-                    
-                    <!--========== SOCIAL ==========-->
-                    <section class="social section">
-                        
-                    </section>
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Will</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home'></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user'></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-user'></i>Education
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt'></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt'></i>Experience
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                    <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        
-                    </section>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/prof-pic.jpg" alt="" class="home__img">
+
+                            <h1 class="home__tittle">William <b>Liu</b> </h1>
+                            <h3 class="home_profession">Full-stack developer</h3>
+
+                            <!-- Button to generate and download the pdf. Available for desktop. -->
+                            <div><a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__informaton">
+                                <i class='bx bx-map'></i> Newark, CA
+                            </span>
+                            <span class="home__informaton">
+                                <i class='bx bx-envelope'></i> liuweiliang9606@hotmail.com
+                            </span>
+                            <span class="home__informaton">
+                                <i class='bx bx-phone'></i> 808-302 8656
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' title="Change mode" id="theme-button"></i>
+
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class='bx bx-download generate-pdf' title="Download resume" id="resume-button"></i>
+                </section>
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+                    <div class="social__container bd-grid">
+                        <!-- <a href="https://wlliu.com" target="_blank" class="social__link">
+                                <i class='bx bx-home-alt-2 social__icon' ></i>wlliu.com
+                            </a> -->
+                        <a href="https://linkedin.com/in/willliu06" target="_blank" class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon'></i>linkedin.com/in/willliu06
+                        </a>
+                        <a href="https://github.com/waileungl" target="_blank" class="social__link ">
+                            <i class='bx bxl-github social__icon'></i>github.com/waileungl
+                        </a>
+                    </div>
+                </section>
 
 
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        
-                    </section>
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Education</h2>
 
-                </div>
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
 
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        
-                    </section>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Software development</h3>
+                                <span class="education__studies">Coding dojo</span>
+                                <span class="education__year">2022</span>
+                            </div>
+                        </div>
 
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        
-                    </section>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
 
-                    <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        
-                    </section>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Bachelor of Pharmacy</h3>
+                                <span class="education__studies">Taylor's University</span>
+                                <span class="education__year">2015 - 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        
-                    </section>
-                    
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        
-                    </section>
-                </div>
-            </div>        
-        </main>
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
 
-        <!--========== SCROLL TOP ==========-->
-        
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>English
+                            </li>
+                            <ul class="languages__content bd-grid">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span>Chinese
+                                </li>
+                            </ul>
+                    </div>
+                </section>
+            </div>
 
-        <!--========== HTML2PDF ==========-->
-        <script src="assets/js/html2pdf.bundle.min.js"></script>
+            <div class="resume__right">
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                    <p class="profile__description">I'm Will, a motivated and detail-oriented web developer with
+                        experience in building and maintaining websites and web applications. Mainly do MERN and Python
+                        Flask. I am eager to learn and develop any application that interests me.</p>
+                </section>
+
+
+
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Full-stack developer</h3>
+                                <span class="experience__company">From 2022 - | DEVBUD study platform</span>
+                                <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Iste, quas ipsam. Animi nesciunt consequuntur ab neque commodi consequatur
+                                    fugit, fuga quidem voluptatum quisquam et nobis dignissimos id explicabo ex
+                                    voluptatibus!</p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Full-stack developer</h3>
+                                <span class="experience__company">From 2022 - | Mediatrac show planner</span>
+                                <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Iste, quas ipsam. Animi nesciunt consequuntur ab neque commodi consequatur
+                                    fugit, fuga quidem voluptatum quisquam et nobis dignissimos id explicabo ex
+                                    voluptatibus!</p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Clinical Engineer</h3>
+                                <span class="experience__company">From 2020 to 2022 | Johnson & Johnson</span>
+                                <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Iste, quas ipsam. Animi nesciunt consequuntur ab neque commodi consequatur
+                                    fugit, fuga quidem voluptatum quisquam et nobis dignissimos id explicabo ex
+                                    voluptatibus!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Html
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Css
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Javascript
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>React
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Next.js
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Tailwind
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Bootstrap
+                            </li>
+                        </ul>
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Node.js
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Express.js
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Python
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Flask
+                            </li>
+                        </ul>
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>MongoDB
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Firebase
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>MySQL
+                            </li>
+                        </ul>
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>AWS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Nginx
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Git
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Gunicorn
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>PM2
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-arrow-to-top scrolltop__icon'></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
